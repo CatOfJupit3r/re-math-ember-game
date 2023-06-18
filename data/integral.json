@@ -1,0 +1,37 @@
+{
+    "semi-normal" : {
+        "0+dx": "C",
+        "1+dx" : "x+C",
+        "x^m+dx": "x^(m+1)/(m+1)+C",
+        "root(x)+dx": "2/3*x^(3/2)+C",
+        "1/(x^2)+dx": "-1/x+C",
+        "1/(root(x))+dx": "2*sqrt(x)+C",
+        "1/x+dx": "ln(x)+C",
+        "a^x+dx": "a^x/ln(a)+C",
+        "e^x+dx": "e^x+C",
+        "ln(x)+dx": "x*ln(x)-x+C"
+    },
+
+    "one_divided": {
+        "1/(a^2+x^2)+dx": "1/a*arctg(x/a)+C",
+        "1/(1+x^2)+dx": "arctg(x)+C",
+        "1/(sqrt(a^2-x^2))+dx": "arcsin(x/a)+C",
+        "1/(sqrt(1-x^2))+dx": "arcsin(x)+C",
+        "1/(sqrt(x^2+-a^2))+dx": "ln|x+sqrt(x^2+-a)|+C",
+        "1/(x^2+-a^2))+dx": "1/(2a)*ln|(x-a)/(x+a)|+C",
+        "1/(x^2+-1))+dx": "1/2*ln|(x-1)/(x+1)|+C",
+        "1/(a^2-x^2)+dx": "1/(2a)*ln|(a+x)/(a-x)|+C",
+        "1/(1-x^2)+dx": "1/2*ln|(1+x)/(1-x)|+C"
+    },
+
+    "trigonometric": {
+        "sin(x)+dx": "-cos(x)+C",
+        "cos(x)+dx": "sin(x)+C",
+        "1/(sin(x)^2)+dx": "-1/ctg(x)+C",
+        "1/sin(x)+dx": "ln|tg(x/2)|+C",
+        "1/(cos(x)^2)+dx": "tg(x)+C",
+        "1/cos(x)+dx": "ln(tg((x/2)+(pi/2)))+C",
+        "tg(x)+dx": "-ln|cos(x)|+C",
+        "ctg(x)+dx": "ln|sin(x)|+C"
+    }
+}
