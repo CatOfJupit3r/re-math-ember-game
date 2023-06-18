@@ -3,7 +3,7 @@ this is a little training program to help you memorise or/and practice integrals
 
 ## How to use
 1. Download the repository
-2. Launch the `game.exe` file
+2. Launch the `intall.bat` file. It will automatically install all the required modules. After that, open `game.exe`.
 3. Or launch the `game.py` file with python3 via the terminal 
 4. Choose the type of game you want to play (integrals or derivatives)
 5. Enjoy!
