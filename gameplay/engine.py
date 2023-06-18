@@ -1,3 +1,4 @@
+import os
 from time import sleep
 
 from . import __guessing_class
@@ -33,10 +34,11 @@ def run() -> None:
             print('Invalid difficulty, try again') # print an error message and loop again
 
     while True: # Loop until the user wants to exit the game
+        os.system('cls') # Clear the console
         continue_playing = game.start_game() # Start the game and set continue_playing to the return value
         if continue_playing is False: # If the user wants to exit the game
             break
 
     print('Thanks for playing!')
 
-    sleep(2) # Wait 2 seconds before closing console
+    sleep(2) # Wait 2 seconds before closing console so the user can read the message

@@ -8,7 +8,7 @@ class GuessingGame:
     Class to play the guessing game
     """
 
-    def __init__(self, type_of_game: str, possible_difficulties=('easy', 'medium', 'hard')):
+    def __init__(self, type_of_game: str, possible_difficulties=('easy', 'standard', 'hard')):
 
         """
         Constructor of the class GuessingGame
@@ -55,6 +55,10 @@ class GuessingGame:
 
         integrals = self.data[category]
         random_equations = random.choices(list(integrals), k=3)
+        # Check if the 3 random equations are unique
+        while len(set(random_equations)) != 3:
+            random_equations = random.choices(list(integrals), k=3)
+
         return random_equations
 
     def get_random_equation(self, category: str) -> str:
@@ -97,6 +101,7 @@ class GuessingGame:
         false_answer = self.data[category][false_equation]
         random_answer = random.choice([correct_answer, false_answer])
 
+        print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
         print('Is this the correct answer? (y/n, write x for exit)')
         print('Equation: {}'.format(correct_equation))
         print('Answer: {}'.format(random_answer))
@@ -121,7 +126,6 @@ class GuessingGame:
                         self.score['failed'] += 1
                         print('Incorrect! The correct answer was: {}'.format(correct_answer))
 
-                print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
 
                 return True
 
@@ -139,6 +143,7 @@ class GuessingGame:
         equations = self.get_random_equations(category)
         answers = {i: equation for i, equation in enumerate(equations)}
 
+        print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
         print('Which one is the correct answer?')
         print('Equation: {}'.format(equations[0]))
         for equation in answers:
@@ -154,8 +159,6 @@ class GuessingGame:
                 else:
                     self.score['failed'] += 1
                     print('Incorrect! The correct answer was: {}'.format(self.data[category][equations[0]]))
-
-                print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
 
                 return True
 
@@ -174,6 +177,7 @@ class GuessingGame:
         correct_equation = self.get_random_equation(category)
         correct_answer = self.data[category][correct_equation]
 
+        print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
         print('Write the answer for this equation: (write x for exit)')
         print('Equation: {}'.format(correct_equation))
         try:
@@ -188,7 +192,6 @@ class GuessingGame:
                     self.score['failed'] += 1
                     print('Incorrect! The correct answer was: {}'.format(correct_answer))
 
-                print(f'Your score is: {self.score["correct"]}/{self.score["correct"] + self.score["failed"]}\n')
 
                 return True
 
