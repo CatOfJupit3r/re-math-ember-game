@@ -1,5 +1,6 @@
 import json
 import random
+from time import sleep
 
 
 class GuessingGame:
@@ -126,7 +127,7 @@ class GuessingGame:
                         self.score['failed'] += 1
                         print('Incorrect! The correct answer was: {}'.format(correct_answer))
 
-
+                sleep(1)
                 return True
 
         except Exception as e:
