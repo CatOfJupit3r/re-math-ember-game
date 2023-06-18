@@ -5,7 +5,7 @@ this is a little training program to help you memorise or/and practice multiplic
 1. Download the repository
 2. Launch the game.exe file
 3. Or launch the game.py file with python3 via the terminal 
-4. Choose the type of game you want to play (multiplication, integrals or derivatives)
+4. Choose the type of game you want to play (integrals or derivatives)
 5. Enjoy!
 
 _~~If you need to refresh your memory on integrals and derivatives, I left a little media sheet in the data folder~~_ 

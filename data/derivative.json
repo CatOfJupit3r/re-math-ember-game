@@ -1,3 +1,38 @@
 {
-
+    "semi-normal": {
+        "C": "0",
+        "x": "1",
+        "x^n": "n*x^(n-1)",
+        "x^2": "2*x",
+        "sqrt(x)": "1/(2*sqrt(x))",
+        "1/x": "-1/(x^2)",
+        "a^x": "a^x*ln(a)",
+        "e^x": "e^x",
+        "log_a(x)": "1/(x*ln(a))",
+        "ln(x)": "1/x"
+    },
+    "trigonometric": {
+        "sin(x)": "cos(x)",
+        "cos(x)": "-sin(x)",
+        "tg(x)":  "1/(cos(x))^2",
+        "ctg(x)": "-1/(sin(x))^2",
+        "arcsin(x)": "1/sqrt(1-x^2)",
+        "arccos(x)": "-1/sqrt(1-x^2)",
+        "arctg(x)": "1/(1+x^2)",
+        "arcctg(x)": "-1/(1+x^2)",
+        "sh(x)": "ch(x)",
+        "ch(x)": "sh(x)",
+        "th(x)": "1/(ch(x))^2",
+        "cth(x)": "-1/(sh(x))^2"
+    },
+    "rules": {
+        "(u+v)'": "u'+v'",
+        "(u-v)'": "u'-v'",
+        "(u*v)'": "u'*v+u*v'",
+        "(C*u)'": "C*u'",
+        "(u/v)'": "(u'*v-u*v')/v^2",
+        "(u/C)'": "1/C*u'",
+        "(C/v)'": "-C*v'/v^2",
+        "(u^v)'": "u^v*(v'*ln(u)+v*u'/u)"
+    }
 }

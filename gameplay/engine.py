@@ -25,7 +25,7 @@ def run() -> None:
     game = __guessing_class.GuessingGame(choice) # Create a new instance of the game class
 
     while True: # Loop until the user chooses a valid difficulty
-        choose_difficulty = input('Choose a difficulty (easy, medium, hard): ')
+        choose_difficulty = input('Choose a difficulty (easy, standard, hard): ')
         if game.valid_difficulty(choose_difficulty) is True:
             game.difficulty = choose_difficulty # Set the difficulty to the user's choice
             break # and break out of the loop
