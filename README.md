@@ -15,7 +15,7 @@ I strongly recommend using standard or easy modes first, as the hard mode requir
 don't forget to star the repository if you like it!
 If you encounter any bugs, please report them in the issues section or fix them yourself and make a pull request!
 
-And yes, I did this program instead of studying for my exams, and yes, I'm proud of it.
+And yes, I did this program instead of studying for my exams, and yes, I'm proud of it. (I got 80/100, LET'S GOOOO)
 
 <p align="center">
   <img src="media/cat_eat.gif" alt="animated" />
